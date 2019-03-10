@@ -55,22 +55,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DeL-Wo-kJo">
-                                <rect key="frame" x="16" y="350" width="280" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="Edz-hk-dmv">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="v7f-7e-GfJ"/>
-                                            <constraint firstAttribute="width" secondItem="Edz-hk-dmv" secondAttribute="height" multiplier="1:1" id="vLJ-CZ-etO"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="cOx-ZH-dcw">
-                                        <rect key="frame" x="140" y="0.0" width="140" height="140"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="cxi-CT-zwJ">
+                                <rect key="frame" x="24" y="335" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="rlY-m9-dHk"/>
+                                    <constraint firstAttribute="width" secondItem="cxi-CT-zwJ" secondAttribute="height" multiplier="1:1" id="zIO-Ng-EFA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images Image" translatesAutoresizingMaskIntoConstraints="NO" id="JIZ-Km-jUB">
+                                <rect key="frame" x="201" y="335" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JIZ-Km-jUB" secondAttribute="height" multiplier="1:1" id="ESE-Vu-U1E"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="dBw-tz-YPI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -78,11 +76,17 @@
                             <constraint firstItem="G0H-Ym-JzA" firstAttribute="centerY" secondItem="8mE-F8-b8H" secondAttribute="centerY" id="3Th-d2-u0c"/>
                             <constraint firstItem="nIv-GO-ozi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4HL-Dx-Z3H"/>
                             <constraint firstItem="nIv-GO-ozi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DpL-Ag-4vB"/>
+                            <constraint firstItem="JIZ-Km-jUB" firstAttribute="top" secondItem="GjZ-Dh-MHc" secondAttribute="bottom" constant="24" id="Eq3-Mh-ggm"/>
+                            <constraint firstItem="JIZ-Km-jUB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cxi-CT-zwJ" secondAttribute="trailing" constant="15" id="Hsf-Qx-9OR"/>
                             <constraint firstItem="nIv-GO-ozi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kuv-aE-VK2"/>
+                            <constraint firstItem="cxi-CT-zwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="L4v-0p-agp"/>
+                            <constraint firstItem="cxi-CT-zwJ" firstAttribute="top" secondItem="GjZ-Dh-MHc" secondAttribute="bottom" constant="24" id="a8Y-Nv-d5y"/>
                             <constraint firstItem="8mE-F8-b8H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ekp-JT-B3d"/>
                             <constraint firstItem="8mE-F8-b8H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lmv-1a-7dZ"/>
                             <constraint firstItem="GjZ-Dh-MHc" firstAttribute="top" secondItem="8mE-F8-b8H" secondAttribute="bottom" constant="24" id="sA7-Q6-jlZ"/>
+                            <constraint firstItem="JIZ-Km-jUB" firstAttribute="width" secondItem="JIZ-Km-jUB" secondAttribute="height" multiplier="1:1" id="sSj-hI-ni3"/>
                             <constraint firstItem="GjZ-Dh-MHc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tPK-ol-CcU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JIZ-Km-jUB" secondAttribute="trailing" constant="24" id="xOv-HF-sjv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
